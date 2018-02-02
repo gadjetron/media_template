@@ -1,0 +1,7 @@
+# Exclude images from tracking
+
+images/*
+
+# Exclude PSD template from tracking
+
+psd_template/*
