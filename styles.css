@@ -1,0 +1,11 @@
+body{
+    background-color: #2e2e30;
+    display: grid;
+}
+
+.container{
+    width: 80%;
+    display: grid;
+    justify-self: center;
+    grid-template-rows: 120px 480px 130px minmax(1450px, auto) 330px;
+}
