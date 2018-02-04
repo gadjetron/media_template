@@ -7,5 +7,90 @@ body{
     width: 80%;
     display: grid;
     justify-self: center;
-    grid-template-rows: 120px 480px 130px minmax(1450px, auto) 330px;
+    grid-template-rows: 100px 480px 130px minmax(1450px, auto) 330px;
+}
+
+.navigation{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    padding-right: 2em;
+    background-color: #2e2e30;
+    align-items: center;
+    border-bottom: solid 1px white;
+    box-shadow: 2px 2px 14px inset silver, -2px -2px 14px inset silver;
+    font: italic small-caps 1em/1 cursive;
+}
+
+.navigation > a img.brand-image{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-left: 2em;
+}
+
+.navigation nav{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    margin-left: auto;
+    background-color: #38383a;
+    border: solid 1px white;
+    border-radius: 6px;
+}
+
+.navigation nav ul{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #ffffff
+    list-style-type: none;
+}
+
+.navigation nav ul li{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-self: stretch;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33.33%;
+    border-radius: 4px;
+}
+
+.navigation nav ul li:hover{
+    background-color: white;
+    transition: 1s;
+}
+
+.navigation nav ul li:hover a{
+    color: black;
+}
+
+.navigation nav ul li a{
+    width: 100%;
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    -ms-align-self: stretch;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
 }
