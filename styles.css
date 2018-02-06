@@ -4,8 +4,8 @@ body{
 }
 
 .container{
-    width: 80%;
     display: grid;
+    width: 80%;
     justify-self: center;
     grid-template-rows: 100px 606px 130px minmax(1450px, auto) 330px;
 }
@@ -171,4 +171,68 @@ body{
 .last-article .read-more-button:hover{
     background-color: #4b77be;
     transition: 0.5s;
+}
+
+.category-lifestyle{
+    background-color: #4b77be;
+}
+
+.category-science{
+    background-color: #e52a40;
+}
+
+.category-technology{
+    background-color: #e87e04;
+}
+
+.category-education{
+    background-color: #663399;
+}
+
+.category-travel{
+    background-color: #26a65b;
+}
+
+.top-5-articles{
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    position: sticky;
+    top: 100px;
+}
+
+.top-5-articles .top-article{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-basis: 18%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 10px 20px;
+}
+
+.top-5-articles .top-article .article-category{
+    text-transform: uppercase;
+}
+
+.top-5-articles .top-article .article-header{
+    text-transform: capitalize;
+}
+
+.top-5-articles .top-article .article-category,
+.top-5-articles .top-article .article-header{
+    flex-basis: 50%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.top-5-articles .top-article .article-header a{
+    text-decoration: none;
+    color: white;
+}
+
+.top-5-articles .top-article .article-header a:hover{
+    text-decoration: underline;
 }
