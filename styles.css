@@ -10,7 +10,7 @@ body{
                          "last-article"
                          "top-5-articles"
                          "all-articles";
-    grid-template-rows: 100px minmax(606px, auto) 130px minmax(1450px, auto);
+    grid-template-rows: 100px minmax(606px, auto) 130px minmax(320px, auto);
     grid-gap: 10px;
 }
 
@@ -91,6 +91,36 @@ body{
     color: black;
 }
 
+.article-category-box{
+    padding: 5px;
+    width: 7em;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2em;
+}
+
+.category-lifestyle{
+    background-color: #4b77be;
+}
+
+.category-science{
+    background-color: #e52a40;
+}
+
+.category-technology{
+    background-color: #e87e04;
+}
+
+.category-education{
+    background-color: #663399;
+}
+
+.category-travel{
+    background-color: #26a65b;
+}
+
 .last-article{
     grid-area: last-article;
     position: relative;
@@ -111,16 +141,6 @@ body{
     width: 60%;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5),
                -4px -4px 15px rgba(0, 0, 0, 0.5);
-}
-
-.last-article .article-category{
-    padding: 5px;
-    width: 7em;
-    border-radius: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    font-size: 1.2em;
 }
 
 .last-article .article-header a{
@@ -162,26 +182,6 @@ body{
     transition: 0.5s;
 }
 
-.category-lifestyle{
-    background-color: #4b77be;
-}
-
-.category-science{
-    background-color: #e52a40;
-}
-
-.category-technology{
-    background-color: #e87e04;
-}
-
-.category-education{
-    background-color: #663399;
-}
-
-.category-travel{
-    background-color: #26a65b;
-}
-
 .top-5-articles{
     grid-area: top-5-articles;
     display: flex;
@@ -197,7 +197,7 @@ body{
     display: flex;
     flex-basis: 20%;
     flex-direction: column;
-    padding: 10px 0 10px 20px;
+    padding: 10px 20px;
 }
 
 .top-5-articles .top-article .article-category{
@@ -223,3 +223,4 @@ body{
 .top-5-articles .top-article .article-header a:hover{
     text-decoration: underline;
 }
+
